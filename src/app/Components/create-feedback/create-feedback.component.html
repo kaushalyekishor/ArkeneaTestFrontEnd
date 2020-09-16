@@ -1,0 +1,32 @@
+<!Doctype html>
+<html lang="en">
+    <script> 
+        
+</script> 
+        
+<body>
+<form name="RegForm" [formGroup]="feedBackForm" (ngSubmit)="register()" onsubmit="Validation()">
+    <div class="form">   
+        <div class="input_field">
+            <label>Name</label>
+            <input type="text" class="input" placeholder="name" formControlName="name" name="name" required>
+        </div>
+
+        <div class="input_field">
+            <label>email Address</label>
+            <input type="text" class="input" placeholder="email" formControlName="email" name="email" required>
+        </div>
+
+        <div class="input_field">
+            <label>message</label>
+            <input type="text" class="input" placeholder="message" formControlName="message" name="message" required>
+        </div>
+        <div class="btn">
+            <input type="submit" value="Sign up" class="sign_btn">
+        </div>
+        <div>{{post}}</div>
+    </div>
+</form>
+</body>    
+</html>
+
